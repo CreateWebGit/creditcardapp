@@ -1,0 +1,14 @@
+.appContainer {
+	/* === Sizing === */
+	width: 100%;
+	height: 100vh;
+
+	/* === Content Alignment === */
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	position: relative;
+
+	background-color: #d3e8fc;
+}

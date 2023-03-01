@@ -1,0 +1,145 @@
+.card {
+	/* Sizing */
+	height: 100%;
+	width: 100%;
+
+	transform-style: preserve-3d;
+
+	/* Content Alignment */
+	position: relative;
+
+	/* Styling */
+
+	color: white;
+
+	z-index: 999;
+	top: 30px;
+}
+
+.card-front,
+.card-back {
+	/* Sizing */
+	height: 100%;
+	width: 100%;
+
+	border-radius: 15px;
+
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	/* Alignment */
+	position: absolute;
+
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+		rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.card-back {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transform: rotateY(180deg);
+}
+
+.card-back-top {
+	width: 100%;
+	height: 30px;
+	top: 30px;
+	background-color: #000;
+	position: absolute;
+}
+
+.card-back-ccv {
+	margin: 0 15px;
+	text-align: right;
+}
+
+.card-back-ccv-title {
+	color: #fff;
+	text-align: right;
+}
+
+.card-back-ccv-number {
+	height: 20px;
+	padding: 5px;
+	background-color: #fff;
+	color: #000;
+	border-radius: 5px;
+	text-align: right;
+}
+
+.card-back-loggo {
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.card-front {
+	background-color: #1d1a3a;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+}
+
+.card-front-logo {
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.focusContainer {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin-top: -50px;
+	margin-left: 150px;
+	border: 1px solid #fff;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.card-front-top {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+.card-front-chip {
+	width: 40px;
+	height: 30px;
+	border-radius: 10px;
+}
+
+.card-front-midle {
+	display: flex;
+	justify-content: center;
+}
+
+.card-front-bottom {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+.cardHolderContainer {
+}
+
+.cardHolderTitle {
+	font-size: 12px;
+	color: #b4b1b8;
+	font-weight: bold;
+}
+
+.cardHolderName {
+}
+
+.expiresContainer {
+}
+
+.expiresTitle {
+}
+
+.expiresNumber {
+}
