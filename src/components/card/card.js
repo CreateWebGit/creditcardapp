@@ -151,7 +151,7 @@ function Card({
 				<div className="card-front-midle">{onCardNumber}</div>
 				<div className="card-front-bottom">
 					<div className="cardHolderContainer">
-						<div className="cardHolderTitle">Card Holder</div>
+						<div className="cardHolderTitle">Card Hold</div>
 						<div className="cardHolderName">{onCardName}</div>
 					</div>
 					<div className="expiresContainer">
