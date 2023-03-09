@@ -10,7 +10,6 @@ import Discover from './images/discover.png';
 import { logDOM } from '@testing-library/react';
 
 function Card({
-	onClick,
 	onCardNumber,
 	onFocusNumber,
 	onFocusName,
@@ -21,11 +20,10 @@ function Card({
 	onCardMonth,
 	onCardYear,
 	onCardCCV,
-	onFocus,
 }) {
 	const [myfocus, setMyfocus] = useState('1');
 	const [mystyle, setMystyle] = useState({});
-	const [creditcard, setCreditcard] = useState();
+	const [creditcard, setCreditcard] = useState('visa');
 
 	function getCreditCardType(accountNumber) {
 		//start without knowing the credit card type
@@ -114,7 +112,7 @@ function Card({
 	});
 
 	return (
-		<div className="card" onClick={onClick}>
+		<div className="card">
 			<div
 				style={{
 					backgroundImage: `url(${background})`,
