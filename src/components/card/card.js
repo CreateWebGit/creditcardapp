@@ -68,7 +68,7 @@ function Card({
 		if (onFocusNumber === true) {
 			setMyfocus('2');
 			setMystyle({
-				marginTop: '88px',
+				marginTop: '92px',
 				marginLeft: '50px',
 				width: '200px',
 				height: '30px',
