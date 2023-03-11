@@ -77,7 +77,7 @@ function Card({
 			setMystyle({
 				marginTop: '155px',
 				marginLeft: '10px',
-				width: '90px',
+				width: '200px',
 				height: '45px',
 				opacity: 1,
 			});

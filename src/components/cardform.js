@@ -167,6 +167,9 @@ function CardForm({
 						/>
 					</div>
 				</div>
+				<div className="submitContainer">
+					<button className="btnSubmit">Submit</button>
+				</div>
 			</div>
 		</div>
 	);
